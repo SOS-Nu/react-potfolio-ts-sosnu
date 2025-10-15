@@ -55,7 +55,11 @@ const Introduction = () => {
             </i>
           </p>
         </Col>
-        <Col md={3} className="d-md-block d-none">
+        <Col
+          xs={12} /* Chiếm toàn bộ chiều rộng trên màn hình nhỏ */
+          md={3}
+          className="d-md-block p-4 p-md-2" /* DI CHUYỂN PADDING LÊN ĐÂY */
+        >
           <Tilt>
             <img src={avatarImg} className="img-fluid" alt="avatar" />
           </Tilt>
