@@ -1,16 +1,17 @@
 import { Col, Row } from "react-bootstrap";
 import ProjectCard from "./project.card";
 import { PROJECTS, PROJECTSFeatured } from "helpers/data";
+import ProjectCardFeatured from "./project.card.featured";
 
 const Project = () => {
   return (
     <>
       <Row>
-        <Col xs={12}>
-          <h3 className="text-center">
+        <Col xs={12} className="text-center mt-md-5">
+          <h3 className="text-center mt-md-5">
             My Recent <span className="brand-red">Works</span>{" "}
           </h3>
-          <h6 className="text-center mb-md-5 mb-2">
+          <h6 className="text-center mb-md-2  mb-2">
             Here are a few projects I've worked on recently.
           </h6>
         </Col>
@@ -21,7 +22,7 @@ const Project = () => {
           {PROJECTSFeatured?.map((item) => {
             return (
               <Col md={8} className="project-card" key={item.id}>
-                <ProjectCard
+                <ProjectCardFeatured
                   imgPath={item.imgPath}
                   title={item.title}
                   description={item.description}

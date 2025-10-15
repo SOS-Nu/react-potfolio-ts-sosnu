@@ -70,7 +70,7 @@ export const PROJECTSFeatured = [
 - Backend được xây dựng với Java Spring (RESTful API), Hibernate, MySQL và áp dụng các Design Pattern, MVC.
 - Bảo mật bằng Spring Security với JWT, Redis cache. Tích hợp Kafka để gửi email thông báo công việc mới.
 - Call API Google Gemini, thanh toán VNPay, đăng nhập với Google, Cronjob để đối soát dữ liệu.
-- Frontend được phát triển bằng React và TypeScript, sử dụng Ant Design cho UI và Axios để gọi API.
+- Frontend sử dụng React với TypeScript, sử dụng Ant Design cho UI và Axios để gọi API.
 - Về DevOps, đóng gói bằng Docker, tự động backup database, và giám sát bằng bộ công cụ Grafana, Prometheus, Node Exporter.`,
     githubLink: "https://github.com/your-username/jobhunter-backend",
     demoLink: "https://your-demo-link.com",

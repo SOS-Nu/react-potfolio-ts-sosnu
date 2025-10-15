@@ -11,14 +11,14 @@ interface IProps {
   demoLink: string;
 }
 
-function ProjectCard(props: IProps) {
+function ProjectCardFeatured(props: IProps) {
   return (
     <Card className="project-card-view">
       <Card.Img
         variant="top"
         src={props.imgPath}
         alt="card-img"
-        style={{ maxHeight: 215 }}
+        style={{ maxHeight: 300 }}
       />
       <Card.Body className="d-flex flex-column">
         <Card.Title>{props.title}</Card.Title>
@@ -46,4 +46,4 @@ function ProjectCard(props: IProps) {
     </Card>
   );
 }
-export default ProjectCard;
+export default ProjectCardFeatured;
