@@ -2,7 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import HeroLeft from "components/sections/hero/hero.left";
 import HeroRight from "components/sections/hero/hero.right";
 import { MdFileDownload } from "react-icons/md";
-import bg from "assets/section.svg";
+import bg from "assets/top-bg.svg";
 import Introduction from "components/sections/introduction";
 import ResizeButton from "components/sections/resize.button";
 import { useTranslation } from "react-i18next";
@@ -29,7 +29,7 @@ const HomePage = () => {
           height: 500,
           position: "absolute",
           top: 0,
-          backgroundRepeat: "no-repeat",
+          backgroundRepeat: "repeat",
           zIndex: 0,
         }}
       ></div>

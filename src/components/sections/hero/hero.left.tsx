@@ -36,8 +36,8 @@ const HeroLeft = (props: IProps) => {
         options={{
           strings: [
             "Software Developer",
-            "Freelancer",
-            "MERN Stack Developer",
+            // "Freelancer",
+            "FullStack Developer",
             "Open Source Contributor",
           ],
           autoStart: true,

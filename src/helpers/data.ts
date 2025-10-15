@@ -4,6 +4,7 @@ import reactNativeImg from "assets/project/react-native.png";
 import reactUltimateImg from "assets/project/react-ultimate.png";
 import springMvcImg from "assets/project/spring-mvc.png";
 import springRestImg from "assets/project/spring-rest.png";
+import jobhunter from "assets/project/jobhunter.png";
 
 export const APP_DATA = {
   YOUTUBE_URL: "https://www.youtube.com/@SOSNu",
@@ -63,7 +64,7 @@ export const EXPERIENCES = [
 export const PROJECTSFeatured = [
   {
     id: 1,
-    imgPath: nestImg,
+    imgPath: jobhunter,
     title: "JobHunter | Full-Stack Application (Featured & Latest)",
     // SỬA Ở ĐÂY: Thay thế bằng dấu ` và xóa các dấu +
     description: `Một nền tảng tuyển dụng, kết nối nhà tuyển dụng và ứng viên.
@@ -72,7 +73,9 @@ export const PROJECTSFeatured = [
 - Call API Google Gemini, thanh toán VNPay, đăng nhập với Google, Cronjob để đối soát dữ liệu.
 - Frontend sử dụng React với TypeScript, sử dụng Ant Design cho UI và Axios để gọi API.
 - Về DevOps, đóng gói bằng Docker, tự động backup database, và giám sát bằng bộ công cụ Grafana, Prometheus, Node Exporter.`,
-    githubLink: "https://github.com/your-username/jobhunter-backend",
+    githubLink: "https://github.com/SOS-Nu/springrest-sosnu",
+    githubLink1: "https://github.com/SOS-Nu/react-vite-khoaluan",
+
     demoLink: "https://your-demo-link.com",
   },
 ];
