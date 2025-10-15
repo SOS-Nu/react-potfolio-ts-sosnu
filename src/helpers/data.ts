@@ -17,49 +17,49 @@ export const EXPERIENCES = [
   {
     id: 1,
     title: {
-      vi: "Lập Trình Viên",
+      vi: "Lập Trình viên Fullstack",
       en: "Fullstack Developer",
     },
     company: {
-      vi: "Công ty ABCXYZ Ltd.",
-      en: "ABCXYZ Ltd.",
+      vi: "Phát Triển Website JobHunter để tìm việc dễ dàng hơn",
+      en: "JobHunter Web Development Project",
     },
     duration: {
-      vi: "Jan 2024 - Hiện tại",
-      en: "Jan 2024 - Present",
+      vi: "tháng 5 2025 - tháng 12 2025",
+      en: "May 2025 - Dec 2025",
     },
   },
   {
     id: 2,
     title: {
       vi: "Lập Trình Viên",
-      en: "Fullstack Developer",
+      en: "Internship Developer",
     },
 
     company: {
-      vi: "Công ty F (freelancer)",
-      en: "F (freelancer)",
+      vi: "THỰC TẬP TẠI CÔNG TY VIHAT SOFTWARE",
+      en: "Vihat Software Company (Internship)",
     },
     duration: {
-      vi: "Tháng 6/2022 - Tháng 1/2024",
-      en: "Jun 2022 - Jan 2024",
+      vi: "Tháng 8/2024 - Tháng 11/2024",
+      en: "Aug 2024 - Nov 2024",
     },
   },
-  {
-    id: 3,
-    title: {
-      vi: "Dự án tự làm",
-      en: "Self Employed",
-    },
-    company: {
-      vi: "Học kiến thức mới mỗi ngày",
-      en: "Code and build something in everyday.",
-    },
-    duration: {
-      vi: "Tháng 1/2020 - Hiện tại",
-      en: "Jan 2020 - Present",
-    },
-  },
+  // {
+  //   id: 3,
+  //   title: {
+  //     vi: "Dự án tự làm",
+  //     en: "Self Employed",
+  //   },
+  //   company: {
+  //     vi: "Học kiến thức mới mỗi ngày",
+  //     en: "Code and build something in everyday.",
+  //   },
+  //   duration: {
+  //     vi: "Tháng 1/2020 - Hiện tại",
+  //     en: "Jan 2020 - Present",
+  //   },
+  // },
 ];
 export const PROJECTSFeatured = [
   {
@@ -76,7 +76,8 @@ export const PROJECTSFeatured = [
     githubLink: "https://github.com/SOS-Nu/springrest-sosnu",
     githubLink1: "https://github.com/SOS-Nu/react-vite-khoaluan",
 
-    demoLink: "https://your-demo-link.com",
+    demoLink: "JPxP7SIEECY",
+    youtubeVideoId: "JPxP7SIEECY", // Đã thay đổi
   },
 ];
 

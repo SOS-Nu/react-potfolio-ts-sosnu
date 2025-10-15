@@ -51,7 +51,7 @@ const Introduction = () => {
             </i>
             {t("introSection.and")}
             <i>
-              <b className="text-pink-100"> Node.js</b>
+              <b className="text-pink-100"> Next JS</b>
             </i>
           </p>
         </Col>

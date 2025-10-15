@@ -18,7 +18,15 @@ const Project = () => {
         </Col>
       </Row>
       <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Row
+          style={{
+            justifyContent: "center",
+            paddingBottom: "10px",
+            paddingRight: "0px",
+            paddingLeft: "0px",
+          }}
+        >
+          {" "}
           {PROJECTSFeatured?.map((item) => {
             return (
               <Col md={8} className="project-card" key={item.id}>
@@ -35,6 +43,7 @@ const Project = () => {
                     githubLink={item.githubLink}
                     githubLink1={item.githubLink1}
                     demoLink={item.demoLink}
+                    youtubeVideoId={item.youtubeVideoId}
                   />
                 </GlowCard>
               </Col>
