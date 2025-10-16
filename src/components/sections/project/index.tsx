@@ -3,8 +3,14 @@ import ProjectCard from "./project.card";
 import { PROJECTS, PROJECTSFeatured } from "helpers/data";
 import ProjectCardFeatured from "./project.card.featured";
 import GlowCard from "@/components/share/glow-card";
+import { useTranslation } from "react-i18next";
+import { useCurrentApp } from "@/components/context/app.context";
+type TLanguage = "vi" | "en";
 
 const Project = () => {
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.resolvedLanguage as TLanguage;
+
   return (
     <>
       <Row>
@@ -33,7 +39,6 @@ const Project = () => {
                 <GlowCard
                   identifier="project-1"
                   autoRotate={true}
-                  spread={200}
                   proximity={0}
                 >
                   <ProjectCardFeatured
@@ -44,6 +49,7 @@ const Project = () => {
                     githubLink1={item.githubLink1}
                     demoLink={item.demoLink}
                     youtubeVideoId={item.youtubeVideoId}
+                    currentLanguage={currentLanguage}
                   />
                 </GlowCard>
               </Col>
@@ -60,6 +66,7 @@ const Project = () => {
                 description={item.description}
                 githubLink={item.githubLink}
                 demoLink={item.demoLink}
+                currentLanguage={currentLanguage}
               />
             </Col>
           );

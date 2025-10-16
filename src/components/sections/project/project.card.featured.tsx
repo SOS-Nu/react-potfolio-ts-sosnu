@@ -7,11 +7,11 @@ import { Col, Modal, Row } from "react-bootstrap";
 
 interface IProps {
   imgPath: string;
-  title: string;
-  description: string;
+  title: { vi: string; en: string };
+  description: { vi: string; en: string };
   githubLink: string;
   githubLink1?: string;
-
+  currentLanguage: "vi" | "en";
   demoLink: string;
   youtubeVideoId: string; // Đã thay đổi
 }
@@ -32,10 +32,10 @@ function ProjectCardFeatured(props: IProps) {
           style={{ maxHeight: 350 }}
         />
         <Card.Body className="d-flex flex-column" style={{ paddingTop: "5px" }}>
-          <Card.Title>{props.title}</Card.Title>
+          <Card.Title>{props.title[props.currentLanguage]}</Card.Title>
           <div className="d-flex flex-column justify-content-between h-100">
             <Card.Text style={{ textAlign: "justify" }}>
-              {props.description}
+              {props.description[props.currentLanguage]}
             </Card.Text>
             <div>
               <Col className="d-flex flex-row">
@@ -53,8 +53,7 @@ function ProjectCardFeatured(props: IProps) {
                   style={{ marginLeft: "5px" }}
                 >
                   <BsGithub />
-                  &nbsp;
-                  Frontend
+                  &nbsp; Frontend
                 </Button>
                 <Button
                   variant="primary"
@@ -70,7 +69,9 @@ function ProjectCardFeatured(props: IProps) {
       </Card>
       <Modal show={showModal} onHide={handleClose} size="lg" centered>
         <Modal.Header closeButton>
-          <Modal.Title>{props.title} - Demo Video</Modal.Title>
+          <Modal.Title>
+            {props.title[props.currentLanguage]} - Demo Video
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div

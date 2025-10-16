@@ -29,7 +29,7 @@ const GlowCard = ({
 
     const CONFIG = {
       proximity: proximity ?? 40,
-      spread: spread ?? 80,
+      spread: 80,
       blur: 12,
       gap: 32,
       vertical: false,

@@ -5,10 +5,11 @@ import { BsGithub } from "react-icons/bs";
 
 interface IProps {
   imgPath: string;
-  title: string;
-  description: string;
+  title: { vi: string; en: string };
+  description: { vi: string; en: string };
   githubLink?: string;
   demoLink?: string;
+  currentLanguage: "vi" | "en";
 }
 
 function ProjectCard(props: IProps) {
@@ -23,10 +24,10 @@ function ProjectCard(props: IProps) {
           style={{ maxHeight: 215 }}
         />
         <Card.Body className="d-flex flex-column">
-          <Card.Title>{props.title}</Card.Title>
+          <Card.Title>{props.title[props.currentLanguage]}</Card.Title>
           <div className="d-flex flex-column justify-content-between h-100">
             <Card.Text style={{ textAlign: "justify" }}>
-              {props.description}
+              {props.description[props.currentLanguage]}
             </Card.Text>
             <div>
               <Button variant="primary" href={props.githubLink} target="_blank">
