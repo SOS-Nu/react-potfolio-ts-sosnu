@@ -17,10 +17,24 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     debug: false,
-    fallbackLng: "en",
-    lng: "en", // default language
+    fallbackLng: "vi",
+    // lng: "vi", // default language
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
+    },
+    detection: {
+      // Thứ tự i18next sẽ tìm ngôn ngữ
+      // 1. localStorage -> 2. cookie -> 3. Ngôn ngữ trình duyệt
+      order: [
+        "localStorage",
+        "cookie",
+        "navigator",
+        "htmlTag",
+        "path",
+        "subdomain",
+      ],
+      // Key để lưu trong localStorage
+      lookupLocalStorage: "i18nextLng",
     },
   });
 
