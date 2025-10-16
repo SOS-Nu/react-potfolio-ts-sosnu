@@ -150,6 +150,23 @@ body {
   }
 }
 
+.project-card-view-featured {
+  box-shadow: 0 3px 3px 3px var(--border-hero-right);
+  color: var(--text-white);
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+
+  &:hover {
+    border-color: var(--brand-social-featured);
+    box-shadow: 0 0 2px 2px var(--brand-social-featured); /* <-- This makes the shadow/glow thicker */
+  }
+  .card-text {
+    white-space: pre-line;
+  }
+}
+
 .blog-card {
   padding-top: 50px !important;
   padding-bottom: 50px !important;

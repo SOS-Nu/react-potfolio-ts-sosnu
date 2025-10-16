@@ -33,7 +33,7 @@ const HomePage = () => {
           zIndex: 0,
         }}
       ></div>
-      <section className="mt-md-7 mt-2">
+      <section className="mt-md-7 mt-6">
         <Container style={{ position: "relative" }}>
           <Row>
             <Col className="d-none d-md-block" md={6}>

@@ -138,7 +138,7 @@ export const SKILLS_DATA = [
   "MaterialUI",
   "Nginx",
   "Java",
-  "Node JS",
+  // "Node JS",
   //   "Strapi",
 ];
 

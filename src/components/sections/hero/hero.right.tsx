@@ -9,7 +9,7 @@ const HeroRight = () => {
         <div className="circle bg-second"></div>
         <div className="circle bg-third"></div>
       </div>
-      <div className="second">
+      <div className="second pt-1 pt-md-3">
         <code className="text-white-0">
           <div>
             <span className="me-2 text-pink-100">const</span>
@@ -20,19 +20,31 @@ const HeroRight = () => {
           <div>
             <span className="ms-4 me-2">name:</span>
             <span className="text-yellow-500">
-              {`'`}Lê Văn Nguyên{`',`}
+              {`'`}Lê Văn Nguyên (SOS Nu){`',`}
+            </span>
+          </div>
+          <div>
+            <span className="ms-4 me-2">Email:</span>
+            <span className="text-yellow-500">
+              {`'`}levannguyen260901@gmail.com{`',`}
+            </span>
+          </div>
+          <div>
+            <span className="ms-4 me-2">Phone:</span>
+            <span className="text-yellow-500">
+              {`'`}0385382597{`',`}
             </span>
           </div>
           <div className="ms-4 me-2 text-pink-200">
             <span className="text-white-0">skills:</span>
             <span>{`['`}</span>
-            <span>React</span>
-            <span>{"', '"}</span>
-            <span>Redux</span>
+            <span>Java Spring</span>
             <span>{"', '"}</span>
             <span>NextJS</span>
             <span>{"', '"}</span>
-            <span>Java Spring</span>
+            <span>React</span>
+            <span>{"', '"}</span>
+            <span>Redux</span>
             <span>{"'"}</span>
             {/* <span>NestJS</span> */}
             <span>{", '"}</span>

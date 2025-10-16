@@ -16,17 +16,17 @@ export const AppContextProvider = ({
 }) => {
   const [theme, setTheme] = useState<ThemeContextType>(() => {
     const initialTheme =
-      (localStorage.getItem("theme") as ThemeContextType) || "light";
+      (localStorage.getItem("theme") as ThemeContextType) || "dark";
     return initialTheme;
   });
 
+  // useEffect này sẽ chạy mỗi khi `theme` thay đổi
   useEffect(() => {
-    const mode = localStorage.getItem("theme") as ThemeContextType;
-    if (mode) {
-      setTheme(mode);
-      document.documentElement.setAttribute("data-bs-theme", mode);
-    }
-  }, []);
+    // 1. Cập nhật thuộc tính trên thẻ <html>
+    document.documentElement.setAttribute("data-bs-theme", theme);
+    // 2. Lưu vào localStorage
+    localStorage.setItem("theme", theme);
+  }, [theme]); // Thêm `theme` vào dependency array
 
   return (
     <AppContext.Provider

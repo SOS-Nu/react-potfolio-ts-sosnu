@@ -58,7 +58,11 @@ const HeroLeft = (props: IProps) => {
         <ResizeButton
           onClick={props.scrollToExperienceSection}
           btnText={t("heroSection.exp")}
-          btnIcons={<AiFillFire style={{ color: "orange" }} />}
+          btnIcons={
+            <div className="wave">
+              <AiFillFire style={{ color: "orange" }} />
+            </div>
+          }
           btnStyle={{
             background: "unset",
             border: "1px solid var(--border-hero-right)",

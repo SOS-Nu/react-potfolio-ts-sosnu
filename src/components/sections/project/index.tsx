@@ -33,7 +33,7 @@ const Project = () => {
                 <GlowCard
                   identifier="project-1"
                   autoRotate={true}
-                  spread={100}
+                  spread={200}
                   proximity={0}
                 >
                   <ProjectCardFeatured

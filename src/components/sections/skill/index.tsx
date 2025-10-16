@@ -1,12 +1,19 @@
+// src/components/Skill/Skill.js
+
 import { SKILLS_DATA } from "helpers/data";
 import { skillsImage } from "helpers/skill.image";
-import Marquee from "react-fast-marquee";
-import "./skill.scss";
 import { Col, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+
+import 'swiper/css';
+import "./skill.scss";
+
 const Skill = () => {
   const { t } = useTranslation();
+  
   return (
     <Row className="skills-container">
       <Col xs={12} className="my-3 my-md-5">
@@ -14,18 +21,30 @@ const Skill = () => {
           <h3>{t("skill.title")}</h3>
         </div>
       </Col>
-      <Col xs={12} className="skills-marquee">
-        <Marquee
-          gradient={false}
-          speed={50}
-          pauseOnHover={true}
-          pauseOnClick={true}
-          delay={0}
-          play={true}
-          direction="left"
+      <Col xs={12} className="skills-carousel">
+        <Swiper
+          modules={[Autoplay]}
+          loop={true}
+          allowTouchMove={true}
+          slidesPerView={"auto"}
+          //tốc độ trượt của item
+          speed={3500}
+          autoplay={{
+            //thời gian chờ giữa các lần chuyển slide sua khi trượt hết
+            delay: 0,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true, // <-- THÊM DÒNG NÀY
+          }}
+          breakpoints={{
+            320: { spaceBetween: 15 },
+            768: { spaceBetween: 20 },
+            1024: { spaceBetween: 25 },
+          }}
+          className="mySwiper"
         >
           {SKILLS_DATA.map((skill, id) => (
-            <div className="skill-item" key={id}>
+            <SwiperSlide key={id} style={{ width: "auto" }}>           
+             <div className="skill-item" >
               <div className="skill-card">
                 <img
                   src={skillsImage(skill)}
@@ -34,10 +53,11 @@ const Skill = () => {
                   height={40}
                 />
                 <p className="skill-name">{skill}</p>
-              </div>
-            </div>
+              </div>           
+               </div>
+            </SwiperSlide>
           ))}
-        </Marquee>
+        </Swiper>
       </Col>
     </Row>
   );

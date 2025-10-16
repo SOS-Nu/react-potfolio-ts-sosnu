@@ -24,7 +24,7 @@ function ProjectCardFeatured(props: IProps) {
 
   return (
     <>
-      <Card className="project-card-view">
+      <Card className="project-card-view-featured">
         <Card.Img
           variant="top"
           src={props.imgPath}
@@ -48,13 +48,13 @@ function ProjectCardFeatured(props: IProps) {
                 </Button>
                 <Button
                   variant="primary"
-                  href={props.demoLink}
+                  href={props.githubLink1}
                   target="_blank"
                   style={{ marginLeft: "5px" }}
                 >
                   <BsGithub />
                   &nbsp;
-                  {"Frontend"}
+                  Frontend
                 </Button>
                 <Button
                   variant="primary"
