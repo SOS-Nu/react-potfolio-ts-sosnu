@@ -1,9 +1,7 @@
-import nestImg from "assets/project/nestjs.png";
-import nextjsImg from "assets/project/nextjs.jpeg";
-import reactNativeImg from "assets/project/react-native.png";
-import reactUltimateImg from "assets/project/react-ultimate.png";
-import springMvcImg from "assets/project/spring-mvc.png";
-import springRestImg from "assets/project/spring-rest.png";
+import Soundcloud from "assets/project/soundcloud.png";
+import laptopshop from "assets/project/laptopshop.png";
+import bookstore from "assets/project/bookstore.png";
+
 import jobhunter from "assets/project/jobhunter.png";
 
 export const APP_DATA = {
@@ -84,7 +82,7 @@ export const PROJECTSFeatured = [
 export const PROJECTS = [
   {
     id: 1,
-    imgPath: nestImg,
+    imgPath: Soundcloud,
     title: "SoundCloud Clone | Next.js 14",
     description:
       "Dự án frontend nhân bản giao diện và các tính năng cốt lõi của SoundCloud. " +
@@ -95,7 +93,7 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    imgPath: nestImg,
+    imgPath: bookstore,
     title: "E-commerce Bookstore | React.js",
     description:
       "Website thương mại điện tử chuyên bán sách, được xây dựng hoàn toàn bằng React. " +
@@ -106,7 +104,7 @@ export const PROJECTS = [
   },
   {
     id: 3,
-    imgPath: nestImg,
+    imgPath: laptopshop,
     title: "Web Application | Java Spring MVC & JSP",
     description:
       "Một ứng dụng web được xây dựng theo kiến trúc Java Spring MVC truyền thống. " +

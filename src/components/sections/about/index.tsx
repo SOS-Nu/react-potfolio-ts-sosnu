@@ -8,41 +8,40 @@ import { FaGraduationCap } from "react-icons/fa6";
 import Divider from "components/sections/divider";
 import { APP_DATA } from "helpers/data";
 import SocialMedia from "components/sections/social.media";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Row>
         <Col md={6} xs={12}>
           <h3 className="text-center mb-md-5 mb-2">
-            Know Who <span className="brand-red">I'M</span>{" "}
+            {t("aboutPage.title1")}{" "}
+            <span className="brand-red">{t("aboutPage.title2")}</span>{" "}
           </h3>
           <div>
             <div>
-              <p> Hi Everyone, I am SOSNu from Ho Chi Minh, VietNam.</p>
+              <p>{t("aboutPage.greeting")}</p>
 
-              <p> I am currently employed as a a freelance dev (start-up).</p>
+              <p>{t("aboutPage.job")}</p>
 
-              <p>
-                {" "}
-                I have completed Bachelor's degree in Information Technology at
-                INDUSTRIAL UNIVERSITY OF HCM CITY (IUH).
-              </p>
+              <p>{t("aboutPage.degreeInfo")}</p>
             </div>
           </div>
           <div>
-            <p>Apart from coding, some other activities that I love to do!</p>
+            <p>{t("aboutPage.hobbiesTitle")}</p>
             <ul>
-              <li>Playing Games</li>
-              <li>Writing Tech Blogs</li>
-              <li>Travelling</li>
+              <li>{t("aboutPage.hobby1")}</li>
+              <li>{t("aboutPage.hobby2")}</li>
+              <li>{t("aboutPage.hobby3")}</li>
             </ul>
           </div>
           <div>
+            <p className="text-center brand-red">{t("aboutPage.quote")}</p>
             <p className="text-center brand-red">
-              "Pursuing Your Dreams Is How You Become Homeless ~.~"
+              {t("aboutPage.quoteAuthor")}
             </p>
-            <p className="text-center brand-red">--Jimmy O Yang</p>
           </div>
         </Col>
         <Col
@@ -70,7 +69,9 @@ const About = () => {
         <Col md={6} xs={12} className="mt-md-5 mt-3">
           <div className="d-flex flex-column align-items-center gap-3">
             <div>
-              <h4 className="text-center brand-red">Education</h4>
+              <h4 className="text-center brand-red">
+                {t("aboutPage.educationTitle")}
+              </h4>
             </div>
             <div>
               <GlowCard identifier={`experience-5`}>
@@ -84,10 +85,8 @@ const About = () => {
                         <FaGraduationCap size={36} />
                       </div>
                       <div className="info">
-                        <p className="title">Softwaren Engineer</p>
-                        <p className="company">
-                          INDUSTRIAL UNIVERSITY OF HCM CITY (IUH)
-                        </p>
+                        <p className="title">{t("aboutPage.degree")}</p>
+                        <p className="company">{t("aboutPage.university")}</p>
                       </div>
                     </div>
                   </div>
@@ -101,7 +100,7 @@ const About = () => {
       <Divider />
       <Row>
         <Col md={6} xs={12} className=" mt-md-5 mt-3">
-          <h3 className="mb-md-5 mb-2">FIND ME ON </h3>
+          <h3 className="mb-md-5 mb-2">{t("aboutPage.findMeOn")}</h3>
           <SocialMedia
             youtube={APP_DATA.YOUTUBE_URL}
             facebook={APP_DATA.FACEBOOK_URL}
@@ -120,7 +119,7 @@ const About = () => {
             // https://github.com/airbnb/lottie-web/issues/2070
             animationPath={JSON.parse(CONTACT_LOTTIE)}
           />
-          <h4 className="text-center">Contact me</h4>
+          <h4 className="text-center">{t("aboutPage.contactMe")}</h4>
         </Col>
       </Row>
       <div className="mb-5"></div>
